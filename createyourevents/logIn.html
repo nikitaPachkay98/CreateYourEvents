@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Titillium+Web&display=swap" rel="stylesheet">
+    <title>LogIn</title>
+</head>
+<body>
+    <a href="menu.html" class="menuItem">
+        <span>M</span>
+        <span>E</span><br>
+        <span>N</span>  
+        <span>U</span>
+    </a>
+    <div class="logContent">
+        <h5>Log In</h5>
+        <h3>Plunge into the world of <span>parties</span>.</h3>
+        <h2>Please sign in.</h2>
+        <form class="logItems">
+            <input type="text" placeholder="Login" id="log"><br>
+            <input type="password" placeholder="Password" id="pass"><br>
+            <input type="text" class="error" id="errorInput" value="Enter correct data" readonly/>
+            <div class="checkbox">
+                <input type="checkbox" id="chbox" onclick="changeCheckBox()">
+                <h4>View Password</h4><br>
+            </div>
+            <button type="button" id="signIn">Sign in</button>
+        </form>
+    </div>
+</body>
+</html>

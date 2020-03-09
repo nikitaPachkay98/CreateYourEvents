@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #FAF0E6;
+    font-family: 'Titillium Web', sans-serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1300px;
+}
+.logotypeItems {
+    display: flex;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.logotypeItems a {
+    z-index: 5;
+    font-weight: 1000;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: lowercase;
+    color: #a8a8a8;
+}
+.logotypeItems a span {
+    text-transform: uppercase;
+    color: #333;
+}
+header img {
+    z-index: 0;
+    position: relative;
+    bottom: 10px;
+    right: 30px; 
+    animation: 5s linear 0s normal none infinite running rot;
+    -webkit-animation: 5s linear 0s normal none infinite running rot;
+    width: 100px;
+}
+@keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+@-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+}
+
+/* section */
+/* menu */
+.hideItem {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    overflow: visible;
+    border: 2px solid #212121;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background .3s linear;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+}
+.hideItem:hover {
+    transition: background .3s linear;
+    color: #333;
+    background-color: transparent;
+}
+.menuItem {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 30px;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    display: block;
+    width: 40px;
+    height: 40px;
+    overflow: visible;
+    border: 2px solid #212121;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background .3s linear;
+    text-decoration: none;
+    color: #333;
+    background-color: #fff;
+    text-align: center;
+}
+.menuItem:hover {
+    transition: background .3s linear;
+    color: #fff;
+    background-color: #333;
+}
+.content {
+    margin-top: 50px;
+    margin-left: 20%;
+    display: flex;
+}
+.logItem, .regItem, .aboutItem, .contactItem {
+    text-decoration: none;
+    font-size: 40px;
+    color: #333;
+    font-weight: 800;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.logItem span:hover {
+    color: transparent;
+    -webkit-text-stroke: .4px #333;
+}
+.regItem span:hover {
+    color: transparent;
+    -webkit-text-stroke: .4px #333;
+}
+.aboutItem span:hover {
+    color: transparent;
+    -webkit-text-stroke: .4px #333;
+}
+.contactItem span:hover {
+    color: transparent;
+    -webkit-text-stroke: .4px #333;
+}
+.regItem {
+    margin-left: 25px;
+}
+.aboutItem {
+    margin-left: 40px;
+}
+.contactItem {
+    margin-left: 65px;
+}
+
+/* logIn */
+.logContent {
+    margin-left: 20%;
+}
+.logContent h3 {
+    font-weight: 1000;
+    font-size: 32px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.logContent span {
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: .3px #333;
+}
+.logContent h2 {
+    font-weight: 900;
+    font-size: 25px;
+}
+.logItems input {
+    padding: 10px 30px;
+    margin-top: 10px;
+    border: .5px solid #a8a8a8;
+    border-radius: 3px;
+    background-color: transparent;
+    font-size: 22px;
+}
+.checkbox {
+    display: flex;
+    margin-top: 15px;
+}
+.checkbox h4 {
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.logItems input:hover {
+    background-color: #fff;
+}
+.error {
+    color: transparent;
+    -webkit-text-stroke: 1px #C21807;
+    display: none;
+}
+.logItems button {
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    font-size: 35px;
+    font-weight: 800;
+    color: #a8a8a8;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 0px;
+}
+.logItems button:hover {
+    color: #333;
+}
+.logContent h5 {
+    font-size: 25px;
+    position: fixed;
+    top: 20%;
+    transform: rotate(90deg);
+    right: 2%;
+}
+
+/* registration */
+.regContent {
+    margin-left: 15%;
+    padding-top: 50px;
+}
+.regContent h4 {
+    position: fixed;
+    font-size: 25px;
+    top: 20%;
+    transform: rotate(90deg);
+    right: 0;
+}
+.regContent h1 {
+    font-weight: 1000;
+    font-size: 50px;
+}
+.regContent span {
+    color: transparent;
+    -webkit-text-stroke: .5px #333;
+}
+.regContent p {
+    font-size: 40px;
+    padding-top: 30px;
+    margin-left: 10%;
+}
+.regItems {
+    display: block;
+    margin-right: 20px;
+    width: 87%;
+    margin-top: 70px;
+    border: 1px solid #d4dfe8;
+    background-color: #d4dfe8;
+    padding: 70px 90px;
+    margin-bottom: 70px;
+}
+.regItems h5 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.regItems h3 {
+    position: relative;
+    transform: rotate(-90deg);
+    bottom: 270px;
+    right: 62.5%;
+    font-size: 25px;
+    font-weight: 800;
+}
+.regItems input {
+    background-color: transparent;
+    padding: 20px 40px;
+    border: 0px;
+    border-bottom: 1.5px solid #a8a8a8; 
+    font-size: 12px;
+}
+.regItems input:focus {
+    border-bottom: 1.5px solid #333;
+    transition: 5s;
+}
+.regItems input:focus::placeholder {
+    font-size: 10px;
+    text-align: right;
+}
+#confirmPassword, #email {
+    margin-left: 40px;
+}
+.regItems button {
+    border: 0;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 30px;
+    color: #a8a8a8;
+    opacity: .5;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    font-weight: 700;
+}
+.regItems button:hover {
+    color: #333;
+    opacity: 1;
+}
+.formItem {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+.formLabel {
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 0;
+    line-height: 40px;
+    transition: .3s;
+    color: #808080;
+}
+.formInput:focus~.formLabel,
+.formInput:not(:focus):valid~.formLabel {
+    top: 5px;
+    left: 80%;
+    font-size: 10px;
+}
+.rightLabel {
+    margin-left: 40px;
+}
+.formInput:focus~.rightLabel,
+.formInput:not(:focus):valid~.rightLabel  {
+    margin-left: 0px;
+}
+/* Contact */
+.contactContent {
+    margin-left: 10%;
+    padding-top: 50px;
+}
+.contactContent h1 {
+    font-weight: 1000;
+    font-size: 60px;
+}
+.contactContent span {
+    color: transparent;
+    -webkit-text-stroke: .5px #333;
+}
+.contactContent p {
+    padding-top: 40px;
+    margin-left: 60px;
+    font-size: 50px;
+    font-weight: 700;
+}
+.contactContent h3 {
+    font-size: 25px;
+    position: fixed;
+    top: 20%;
+    transform: rotate(90deg);
+    right: 2%;
+}
+.contactInfo {
+    padding-top: 70px;
+    margin-left: 60px;
+}
+.contactInfo p {
+    font-size: 15px;
+    margin: 0;
+    padding-top: 15px;
+}
+.contactLink {
+    margin-left: 60px;
+    margin-top: 70px;
+    border: 1px solid #d4dfe8;
+    background-color: #d4dfe8;
+    height: 200px;
+    margin-bottom: 80px;
+}
+.contactLink h4 {
+    position: relative;
+    top: -25px;
+    left: 7%;
+    font-size: 30px;
+}
+.contactLink p {
+    position: relative;
+    top: -40px;
+    font-size: 15px;
+    padding-left: 5px;
+}
+.contactLink a {
+    font-size: 23px;
+    text-decoration: none;
+    color: #a8a8a8;
+    padding-left: 7%;
+}
+.contactLink a:hover {
+    color: #333;
+} 
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 1300px;
+}
+footer h3 {
+    margin-top: 8%;
+    margin-left: 50px;
+    font-weight: 800;
+    font-size: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.mainLink, .vkLink, .youtubeLink, .instLink, .telegramLink {
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    font-size: 30px;
+}
+.mainLink:hover {
+    color: transparent;
+    -webkit-text-stroke: .1px #333;
+}
+.vkLink {
+    margin-left: 40px;
+}
+.vkLink:hover {
+    color: transparent;
+    -webkit-text-stroke: .1px #333;
+}
+.youtubeLink {
+    margin-left: 70px;
+}
+.youtubeLink:hover {
+    color: transparent;
+    -webkit-text-stroke: .1px #333;
+}
+.instLink {
+    margin-left: 90px;
+}
+.instLink:hover {
+    color: transparent;
+    -webkit-text-stroke: .1px #333;
+}
+.telegramLink {
+    margin-left: 120px;
+}
+.telegramLink:hover {
+    color: transparent;
+    -webkit-text-stroke: .1px #333;
+}
+@media screen and (max-width: 1125px) {
+    .hideItem {
+        right: 50px;
+    }
+    .menuItem {
+        right: 50px;
+    }
+    footer {
+        width: 1000px;
+    }
+    .regContent h4 {
+        right: 0%;
+    }
+    .regItems {
+        width: 75%;
+    }
+}
+@media screen and (max-width: 1080px) { 
+    .regItems {
+        width: 74%;
+    }
+}
+@media screen and (max-width: 1000px) { 
+    footer {
+        width: 800px;
+    }
+    .regItems {
+        width: 70%;
+    }
+}

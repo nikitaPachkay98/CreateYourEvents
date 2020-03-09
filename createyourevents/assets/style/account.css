@@ -1,0 +1,376 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #979784;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header h3 {
+  padding: 20px;
+  font-size: 25px;
+  color: #c8c8b9;
+  padding-left: 50px;
+}
+header span {
+  color: transparent;
+  -webkit-text-stroke: 0.9px #FFFFF8;
+  font-size: 30px;
+}
+#error {
+  margin-top: 20px;
+  display: none;
+}
+#error input {
+  padding: 20px 25px;
+  width: 100%;
+  border: 0px;
+  border-radius: 20px;
+  background-color: transparent;
+  color: transparent;
+  font-size: 25px; 
+  -webkit-text-stroke: .4px #C21807;
+}
+.eventsBtn {
+  padding: 20px;
+  padding-right: 50px;
+}
+.eventsBtn button {
+  padding: 10px 15px;
+  border: 0px;
+  background-color: transparent;
+  font-size: 25px;
+  color: #c8c8b9;
+}
+.eventsBtn button:first-child {
+  margin-right: 70px;
+}
+.eventsBtn button:hover {
+  color: #FFFFF8;
+}
+#time {
+  position: fixed;
+  margin-left: 20%;
+  font-size: 100px;
+  font-weight: 900;
+  color: rgba(103, 103, 83, .2);
+}
+#dateShow {
+  position: fixed;
+  top: 35%;
+  margin-left: 25%;
+  font-size: 50px;
+  font-weight: 900;
+  color: rgba(103, 103, 83, .2);
+}
+.searchItemsWindow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #808080;
+  z-index: 10;
+  opacity: .8;
+  display: none;
+}
+#map {
+  height: 80%;
+  width: 60%;
+  position: fixed;
+  top: 100px;
+  left: 50px; 
+  z-index: 0;
+}
+#canselMapBackground {
+  z-index: 5;
+  background-color: transparent;
+  border: 0px;
+  font-size: 30px;
+  position: fixed;
+  left: 95%;
+  top: 20px;
+  color: #333;
+}
+#canselMapBackground:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.searchEventsItems {
+  position: absolute;
+  font-size: 20px;
+  top: 100px;
+  left: 65%;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.searchEventsItems th {
+  border: 1px solid #fff;
+  padding: 15px 15px;
+  background-color: transparent;
+  color: #c8c8b9;
+}
+.searchEventsItems th:hover {
+  color: #333;
+  cursor: pointer;
+}
+.eventItems button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 40px;
+  margin-left: 50px;
+  color: #c8c8b9;
+}
+.eventItems button:last-child {
+  margin-left: 50px;
+}
+.eventItems button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+.eventItems {
+  display: block;
+  margin-left: 70%;
+}
+.eventsInput {
+  padding: 10px 15px;
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #c8c8b9;
+  margin-top: 30px;
+  color: #FFFFF8;
+}
+.eventInput {
+  padding: 10px 15px;
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #a8a8a8;
+  margin-top: 30px;
+  color: #c8c8b9;
+  font-weight: 800;
+}
+.eventInput option {
+  background-color: #434343;
+  color: #c8c8b9;
+  font-weight: 800;
+  padding: 10px;
+}
+.eventsInput:first-child {
+  border-bottom: 0px;
+  font-size: 25px;
+}
+#eventTitle button {
+  font-weight: 800;
+  font-size: 15px;
+}
+#eventTitle {
+  display: none;
+}
+.searchItems {
+  margin-left: 87%;
+}
+.searchItems select {
+  padding: 10px 15px;
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #a8a8a8;
+  margin-top: 30px;
+  color: #c8c8b9;
+  font-weight: 800;
+}
+.searchItems option {
+  background-color: #434343;
+  color: #c8c8b9;
+  font-weight: 800;
+  padding: 10px;
+}
+.searchItems input {
+  padding: 10px 15px;
+  border: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid #a8a8a8;
+  margin-top: 30px;
+  color: #c8c8b9;
+  width: 116px;
+}
+.searchItems button {
+  background-color: transparent;
+  border: 0px;
+  font-size: 26px;
+  margin-left: 25px;
+  color: #c8c8b9;
+  margin-top: 30px;
+}
+.searchItems button:hover {
+  color: #fff;
+  cursor: pointer;
+}
+#searchItem {
+  display: none;
+}
+
+#addBtn {
+  margin-top: 30px;
+  color: #c8c8b9;
+}
+#addBtn:hover {
+  color: #fff;
+  cursor: pointer;
+}
+#formEvents {
+  display: none;
+}
+.modalItems {
+  position: absolute;
+  top: 25%;
+  left: 38%;
+  padding: 40px 20px;
+  border-radius: 20px;
+  background-color: #faf0e6;
+  z-index: 10;
+}
+.modalItems input {
+  padding: 10px 15px;
+  border: 0px;
+  border-bottom: 1px solid #333;
+  margin: 10px;
+  background-color: transparent;
+}
+.modalItems button {
+  padding: 10px 15px;
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+  font-family: "Josefin Sans", sans-serif;
+  color: #c8c8b9;
+}
+.modalItems button:hover {
+  color: #333;
+}
+#modalBackground {
+  background-color: #333;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0.9;
+  display: none;
+}
+#canselModal {
+  position: absolute;
+  font-size: 30px;
+  top: 1px;
+  left: 85%;
+}
+.youEventsItems {
+  position: fixed;
+  margin-left: 69%;
+  font-size: 20px;
+  margin-top: 10%;
+  font-weight: 900;
+  margin-bottom: 50px;
+}
+.youEventsItems th {
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  background-color: transparent;
+  color: #c8c8b9;
+}
+.youEventsItems th:hover {
+  color: #333;
+  cursor: pointer;
+}
+#tableYou {
+  display: none;
+}
+.deleteBtn {
+  padding: 10px 15px;
+  border: 0px;
+  background-color: transparent;
+  font-size: 25px;
+  color: #c8c8b9;
+}
+footer {
+  position: fixed;
+  top: 84%;
+  background-color: transparent;
+  width: 100%;
+  display: flex;
+}
+.accountItems {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.profileImg {
+  height: 260px;
+  width: 200px;
+  left: 20px;
+  background-color: rgba(103, 103, 83, .2);
+  top: -190px;
+  position: absolute;
+  border-radius: 30px;
+  border-radius: 60%;
+}
+.profileImage {
+  height: 240px;
+  border-radius: 70%;
+  width: 180px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+#labelFile {
+  position: relative;
+  top: 10px;
+  color: #c8c8b9;
+  left: 20px;
+}
+#labelFile:hover {
+  color: #333;
+}
+#files {
+    display: none;
+}
+.accountInfoItems {
+  margin-left: 20%;
+}
+.accountInfoItems input {
+  border: 0;
+  margin-left: 20px;
+  color: #fff;
+  width: 200px;
+  padding: 7px 15px;
+  font-size: 20px;
+  background-color: transparent;
+}
+.optionsBtn button {
+  border: 0px;
+  background-color: transparent;
+  margin-right: 40px;
+  font-size: 21px;
+  color: #c8c8b9;
+  margin-top: 12px;
+}
+.optionsBtn a {
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 21px;
+    color: #c8c8b9;
+    margin-top: 12px;
+}
+.optionsBtn a:hover {
+    color: #fff;
+}
+.optionsBtn button:hover {
+  color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  .youEventsItems {
+    margin-left: 50%;
+  }
+} 

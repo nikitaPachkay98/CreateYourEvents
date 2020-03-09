@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style/account.css">
+    <title>Document</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=364937b2-de7a-4682-86c7-ca138edef6d0&lang=ru_RU" type="text/javascript">
+    </script>
+</head>
+<body id ="sectionColor">
+    <header id="headerColor">
+        <div>
+          <h3><span>C</span>reate <span>Y</span>our<br> <span>E</span>vents.</h3>
+        </div>
+        <div id="error">
+          <input type="text" value="Such an event does not exist" readonly>
+        </div>
+        <div class="eventsBtn">
+            <button type="button" id="add">Add</button>
+            <button type="button" id="search">Search</button>
+        </div>
+    </header>
+    <section>
+      <span id="time">12:14</span><br>
+      <span id="dateShow">01.01.2020</span>
+      <div class="searchItemsWindow" id="searchItemWindow">
+        <div id="map">
+          <button type="button" id="canselMapBackground">X</button>
+        </div>
+        <table class="searchEventsItems" id="searchTable">
+            <tr>
+                <th>Name</th>
+                <th id="addressBtn">Address</th>
+                <th>Date</th>
+                <th>Places</th>
+            </tr>
+          </table>
+        </div>
+        <div class="eventItems">
+            <form id="eventTitle">
+                <select class="eventInput" id="eventName">
+                    <option>EDM</option>
+                    <option>Performance</option>
+                    <option>Сonferences</option>
+                    <option>Exhibitions</option>
+                    <option>Rave</option>
+                </select>
+            <button type="button" id="addForm">Добавить</button>
+            </form>
+            <form id="formEvents">
+              <input type="text" id="nameForm" class="eventsInput" readonly><br>
+              <input type="text" class="eventsInput" id="city" placeholder="City Street House"><br>
+              <input type="text" class="eventsInput" id="date" placeholder="Date"><br>
+              <input type="text" class="eventsInput" id="places" placeholder="Places"><br>
+              <button type="button" id="addBtn">add</button>
+            </form>
+          </div>
+          <div class="searchItems" id="searchItem">
+            <select id="eventSearch">
+                <option>EDM</option>
+                <option>Performance</option>
+                <option>Сonferences</option>
+                <option>Exhibitions</option>
+                <option>Rave</option>
+            </select><br>
+            <input type="text" placeholder="Address" id="addressInput"><br>
+            <button type="button" id="searchBtn">Search</button>
+          </div>
+          <div id="modalBackground">
+            <form class="modalItems" id="modalForm"> 
+              <button type="button" id="canselModal">X</button>
+              <input type="text" placeholder="Color header" id="colorHeader">
+              <button type="button" id="colorHeaderBtn">add</button><br>
+              <input type="text" placeholder="Color Attachment" id="colorAttachment">
+              <button type="button" id="colorAttachmentBtn">add</button><br>
+              <input type="text" placeholder="Color Account Info" id="colorAccountInfo">
+              <button type="button" id="colorAccountInfoBtn">add</button><br>
+              <input type="text" placeholder="Full Name" id="fullNameInput">
+              <button type="button" id="fullNameBtn">add</button><br>
+              <input type="text" placeholder="Years" id="yearsInput">
+              <button type="button" id="yearsBtn">add</button><br>
+              <label id="labelFile" for="files">Сменить Фото</label>
+            </form>
+          </div>
+          <table class="youEventsItems" id="tableYou">
+            <tr>
+                <th id="youEventsName">Name</th>
+                <th>Address</th>
+                <th>Date</th>
+                <th>Places</th>
+                <th id="canselTable">X</th>
+            </tr>
+          </table>
+    </section>
+    <footer id="profileColor">
+        <div class="accountItems">
+            <div class="profileImg" id="profileImg">
+                <div class="imageContainer">
+                    <input type="file" id="files" name="files[]" multiple size="1000"/>
+                    <output id="list"></output><br/>
+                  </div>
+            </div>
+            <div class="accountInfoItems">
+                <input type="text" class="accountInfo" id="name" readonly>
+                <input type="text" class="accountInfo" id="years" readonly>
+            </div>
+            <div class="optionsBtn">
+                <button type="button" id="yourEventBtn">Your Events</button>
+                <button type="button" id="optionBtn">Options</button>
+                <a href="index.html">Quit</a>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/script/map/script.js"></script>
+    <script src="assets/script/date/script.js"></script>
+    <script src="assets/script/changeImage/script.js"></script>
+    <script src="assets/script/modalWindow/script.js"></script>
+    <script src="assets/script/addEvents/script.js"></script>
+    <script src="assets/script/searchEvents/script.js"></script>
+</body>
+</html>
